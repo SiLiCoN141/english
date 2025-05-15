@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'IKEA';
+    src: url('https://www.ikea.com/global/assets/fonts/woff2/noto-ikea-700.latin.a3f10ed8.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IKEA';
+    src: url('https://www.ikea.com/global/assets/fonts/woff2/noto-ikea-400.latin.5a052965.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'IKEA', sans-serif;
+    font-size: 40px;
+    color: #0057AD;
+    background-color: #0057AD;
+    font-weight: 400;
+}
+
+div {
+    border-radius: 50%;
+    padding: 0.6em 0.9em;
+    background-color: #FBDA0C;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+img {
+    border-radius: 50%;
+}
+
+thicc {
+    font-weight: 700;
+}
