@@ -39,6 +39,6 @@ thicc {
     font-weight: 700;
 }
 
-#quick-start-container {
+#quick-start-container, #gtx-trans {
     visibility: hidden;
 }
