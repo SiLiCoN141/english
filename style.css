@@ -38,3 +38,7 @@ img {
 thicc {
     font-weight: 700;
 }
+
+#quick-start-container {
+    visibility: hidden;
+}
