@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const w = window.innerWidth;
                 const h = window.innerHeight;
                 
-                if (x + bounds.width == w || x == 0) dx = -dx;
-                if (y + bounds.height == h || y == 0) dy = -dy;
+                if (x + bounds.width >= w || x <= 0) dx = -dx;
+                if (y + bounds.height >= h || y <= 0) dy = -dy;
                 
                 x += dx * dt;
                 y += dy * dt;
