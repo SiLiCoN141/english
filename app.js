@@ -4,7 +4,7 @@ let lastFrame = new Date();
 
 document.addEventListener('DOMContentLoaded', () => {
     document.body.addEventListener('keydown', (event) => {
-        if (event.key == 'ArrowRight' && slide != 9) {
+        if (event.key == 'ArrowRight' && slide != 7) {
             document.location.pathname = pathname.substring(0, pathname.length - 6) + (Number(pathname.substring(pathname.length - 6, pathname.length - 5)) + 1).toString() + '.html';
         } else if (event.key == 'ArrowLeft' && slide != 1) {
             document.location.pathname = pathname.substring(0, pathname.length - 6) + (Number(pathname.substring(pathname.length - 6, pathname.length - 5)) - 1).toString() + '.html';
@@ -37,12 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         
             move();
-            break;
-        case 2:
-            console.log("itch")
-            break;
-        case 3:
-            console.log("bahbahbahabh")
             break;
     }
 });
