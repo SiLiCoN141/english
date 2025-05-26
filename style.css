@@ -21,13 +21,16 @@ body {
     overflow: hidden;
 }
 
-div {
+.title {
     border-radius: 50%;
     padding: 0.6em 0.9em;
+    text-align: center;
+}
+
+div {
     background-color: #FBDA0C;
     display: inline-block;
     position: absolute;
-    text-align: center;
     width: fit-content;
     height: fit-content;
 }
