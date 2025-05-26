@@ -24,8 +24,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 const w = window.innerWidth;
                 const h = window.innerHeight;
                 
-                if (x + bounds.width >= w || x <= 0) dx = -dx;
-                if (y + bounds.height >= h || y <= 0) dy = -dy;
+                if (x + bounds.width >= w) {
+                    dx = -Math.abs(dx);
+                    x = w - bounds.width;
+                } else if (x <= 0) {
+                    dx = Math.abs(dx);
+                    x = 0;
+                }
+                
+                if (y + bounds.height >= h) {
+                    dy = -Math.abs(dy);
+                    y = h - bounds.height;
+                } else if (y <= 0) {
+                    dy = Math.abs(dy);
+                    y = 0;
+                }
                 
                 x += dx * dt;
                 y += dy * dt;
