@@ -33,6 +33,7 @@ div {
     position: absolute;
     width: fit-content;
     height: fit-content;
+    padding: 10px 20px;
 }
 
 img {
